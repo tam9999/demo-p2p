@@ -10,6 +10,6 @@
   "scripts": {
     "start": "node server.js",
     "postinstall": "cd ./client && yarn",
-    "heroku-postbuild": "yarn install --prefix client "
+    "heroku-postbuild": "npm install --prefix client "
   }
 }
