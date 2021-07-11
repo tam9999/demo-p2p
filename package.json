@@ -8,8 +8,9 @@
     "socket.io": "^4.1.2"
   },
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "cd ./client && yarn",
-    "heroku-postbuild": "npm install --prefix client "
+    "start": "nodemon index",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"server": "nodemon index",
+		"heroku-postbuild": "yarn install --prefix client "
   }
 }
